@@ -238,35 +238,44 @@ a {
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 380px) {
   .profilepic {
-    height: 300px;
+    height: 200px;
   }
 
   .user-title {
-    font-size: 5em;
+    font-size: 3em;
   }
 
   .user-subtitle {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
+  .home-main {
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  }
   .hobbie-img {
-    width: 480px;
+    width: 380px;
     height: auto;
   }
   .hobbie_item h1 {
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
+    opacity: 1;
   }
   .hobbies-img {
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  }
+
+  .home-career {
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   }
 
   .devpic {
-    margin: 30px;
-    height: 300px;
-    width: auto;
+    margin: 30px 0px;
+    width: 360px;
+    padding: 0px 20px;
+    height: auto;
     align-self: center;
   }
 

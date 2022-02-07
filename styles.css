@@ -47,7 +47,7 @@ a {
 .profilepic {
   margin: 30px auto;
   height: 760px;
-  width: auto;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -55,7 +55,10 @@ a {
 .home-main section {
   text-align: center;
   align-self: center;
-  margin: 30px;
+  margin: 30px auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .career-title {
@@ -258,56 +261,6 @@ input:hover {
 
 /* Media Query */
 
-@media only screen and (max-width: 480px) {
-  .profilepic {
-    height: 300px;
-  }
-
-  .user-title {
-    font-size: 5em;
-  }
-
-  .user-subtitle {
-    font-size: 1.5em;
-  }
-
-  .hobbie-img {
-    width: 480px;
-    height: auto;
-  }
-  .hobbie_item h1 {
-    font-size: 3em;
-    text-align: center;
-    opacity: 1;
-  }
-  .home-main {
-    grid-template-columns: repeat(auto-fit, minmax(480, 1fr));
-  }
-
-  .hobbies-img {
-    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-  }
-
-  .home-career {
-    grid-template-columns: repeat(auto-fit, minmax(480, 1fr));
-  }
-  .devpic {
-    margin: 30px;
-    height: 300px;
-    width: auto;
-    align-self: center;
-  }
-
-  .career-title {
-    font-size: 1.5em;
-    margin: 10px;
-  }
-
-  .career-subtitle {
-    font-size: 1em;
-  }
-}
-
 @media only screen and (max-width: 380px) {
   .profilepic {
     height: 200px;
@@ -322,7 +275,7 @@ input:hover {
   }
 
   .home-main {
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
   .hobbie-img {
     width: 380px;
@@ -334,11 +287,11 @@ input:hover {
     opacity: 1;
   }
   .hobbies-img {
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
 
   .home-career {
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
 
   .devpic {
@@ -355,5 +308,55 @@ input:hover {
 
   .career-subtitle {
     font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .profilepic {
+    width: 250px;
+    height: auto;
+  }
+
+  .user-title {
+    font-size: 2.5em;
+  }
+
+  .user-subtitle {
+    font-size: 1.2em;
+  }
+
+  .hobbie-img {
+    width: 100%;
+  }
+  .hobbie_item h1 {
+    font-size: 3em;
+    text-align: center;
+    opacity: 1;
+  }
+  .home-main {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+
+  .hobbies-img {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+
+  .home-career {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  .devpic {
+    margin: 30px;
+    height: auto;
+    width: 350px;
+    align-self: center;
+  }
+
+  .career-title {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .career-subtitle {
+    font-size: 1.2em;
   }
 }

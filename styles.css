@@ -46,8 +46,8 @@ a {
 
 .profilepic {
   margin: 30px auto;
-  height: 760px;
-  width: 100%;
+  height: auto;
+  width: 600px;
   justify-content: center;
   align-items: center;
 }
